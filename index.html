@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Colin Moen">
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Bear, Ninja, Hunter</title>
+
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: black">
+    <P id="playerChoice" style="text-align: center; font-size: large; font-family: Impact; color: rgb(43, 255, 0)">
+        player choice prints here</P>
+    <p id="computerChoice" style="text-align: center; font-size: large; font-family: Impact; color: rgb(255, 0, 128)">
+        computer choice prints here</p>
+
+    <script>
+        let computerChoice = "Bear";
+        let playerName = prompt('Welcome to Bear Hunter Ninja! Please enter your name to get started: ');
+        alert(`Hi ${playerName}! Let's Play!`);
+        let playerChoice = prompt(`Who are you: Bear, Ninja, or Hunter?`);
+        document.getElementById("playerChoice").innerHTML = `${playerName}, You picked ${playerChoice}!`;
+        console.log(playerName + ", You picked " + playerChoice + " !");
+        document.getElementById("computerChoice").innerHTML = `The computer picked Bear!`;
+        console.log(`The computer picked Bear!`);
+    </script>
+
+
+</body>
+
+</html>
